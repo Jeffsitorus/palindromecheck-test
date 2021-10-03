@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "4fd5c076-0f05-4afb-9ea1-940d56de007e",
+		"name": "Palindrome",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CHECK PALINDROME",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{base_url}}/check-palindrome?string=YAY",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"check-palindrome"
+					],
+					"query": [
+						{
+							"key": "string",
+							"value": "YAY",
+							"description": "string"
+						},
+						{
+							"key": "string",
+							"value": "no lemons, no melon",
+							"description": "string",
+							"disabled": true
+						},
+						{
+							"key": "string",
+							"value": "hello worlds",
+							"disabled": true
+						},
+						{
+							"key": "string",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CHECK PALINDROME",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{base_url}}/check-palindrome?string=YAY",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"check-palindrome"
+							],
+							"query": [
+								{
+									"key": "string",
+									"value": "YAY",
+									"description": "string"
+								},
+								{
+									"key": "string",
+									"value": "no lemons, no melon",
+									"description": "string",
+									"disabled": true
+								},
+								{
+									"key": "string",
+									"value": "hello worlds",
+									"disabled": true
+								},
+								{
+									"key": "string",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Oct 2021 15:30:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Oct 2021 15:30:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "palindrome"
+				}
+			]
+		}
+	]
+}
